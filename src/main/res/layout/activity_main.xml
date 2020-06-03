@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#86C1C9"
+    tools:context=".MainActivity" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_mindful_parent"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:fontFamily="@font/fauna_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/mindfulness_practice_and_reminders_for_parents"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:fontFamily="@font/fauna_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/meditationBttn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="#7CEDF0F3"
+        android:drawableBottom="@drawable/ic_spa_black_24dp"
+        android:fontFamily="@font/fauna_one"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="startMeditation"
+        android:text="Meditation"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/musicBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/musicBttn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#7CEDF0F3"
+        android:drawableBottom="@drawable/ic_play_circle_filled_black_24dp"
+        android:fontFamily="@font/fauna_one"
+        android:text="Music"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/reflectionBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meditationBttn" />
+
+    <Button
+        android:id="@+id/reflectionBttn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#7CEDF0F3"
+        android:drawableBottom="@drawable/ic_all_inclusive_black_24dp"
+        android:fontFamily="@font/fauna_one"
+        android:text="Reflection"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="246dp"
+        android:layout_height="206dp"
+        app:layout_constraintBottom_toTopOf="@+id/meditationBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@mipmap/ic_mombaby_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

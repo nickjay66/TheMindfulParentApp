@@ -1,9 +1,16 @@
 # TheMindfulParentApp
-The Mindful Parent application I am currently developing for Android
+#The Mindful Parent application I am currently developing for Android
 
-This app is in the beginning stages and I am adding to it daily. I am currently working on the recorded material for the actual meditationd.
+#Installation
 
-Minimum Android SDK is 16.
+Open project in Android studio - Minimum Android SDK is 16.
+
+#Use
+
+This app is in the beginning stages and I am adding to it daily. I am currently working on the recorded material for the actual meditations.
+
+Users can choose which meditation to access. Meditation will play once chosen. There will be relaxing music for sleep added soon.
+
 
 I am using Adobe Stock and Photoshop for all images.
 
